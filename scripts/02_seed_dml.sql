@@ -33,5 +33,5 @@ INSERT INTO payments (fk_id_ride, payment_method, amount, payment_status, paymen
 (3, 'WALLET', 32.80, 'PENDING', '2026-09-17 09:00:00');
 
 INSERT INTO fares_audits (fk_id_fare, old_base_fare, old_per_minute_rate, old_per_km_rate, update_date, modified_by) VALUES
-(1, 3.50, 0.20, 1.35, '2026-01-10 00:00:00', 'admin_system'),
-(2, 5.50, 0.30, 1.80, '2026-01-10 00:00:00', 'admin_system');
+(1, 3.50, 0.20, 1.35, '2026-01-10 00:00:00', USER()),
+(2, 5.50, 0.30, 1.80, '2026-01-10 00:00:00', USER());
